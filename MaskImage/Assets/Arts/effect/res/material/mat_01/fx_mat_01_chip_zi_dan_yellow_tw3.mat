@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: fx_mat_01_chip_zi_dan_yellow_tw3
+  m_Shader: {fileID: 4800000, guid: af868f88e8dbe5c47927d27be3fd27a8, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Main_Tex:
+        m_Texture: {fileID: 2800000, guid: 62ca86f92c0bc8a4fa2335ad86f4d9cc, type: 3}
+        m_Scale: {x: 0.6, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Rao_dong:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Wen_Li:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _mask:
+        m_Texture: {fileID: 2800000, guid: e362cd632cbad7249b65e834a4e16d60, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AR: 0
+    - _R: 0
+    - _Rao_dong_power: 0
+    - _Rao_dong_speed: 0
+    - _Rotator: 0
+    - _Smooth: 0.4
+    - _U: -1
+    - _V: 0
+    - _Wen_li_speed: 0
+    - _Widthe: 0.616
+    m_Colors:
+    - _Main_Color: {r: 1, g: 1, b: 1, a: 1}

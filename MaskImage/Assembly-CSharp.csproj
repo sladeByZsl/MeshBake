@@ -56,10 +56,25 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\UIParticleMask\UIParticleMask.cs" />
+    <Compile Include="Assets\Samples\TMeshBake.cs" />
+    <Compile Include="Assets\Scenes\BakeParticle.cs" />
+    <Compile Include="Assets\Scenes\BakeParticleSystemToMesh.cs" />
+    <Compile Include="Assets\Scenes\BakeParticles2.cs" />
+    <Compile Include="Assets\Scenes\BakeSkin.cs" />
+    <Compile Include="Assets\Scenes\MyMaskImage.cs" />
+    <Compile Include="Assets\Scenes\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scenes\ShurikenBakedMeshEmitter.cs" />
+    <Compile Include="Assets\Scenes\TestNEw.cs" />
+    <Compile Include="Assets\Scenes\UGUITool.cs" />
+    <Compile Include="Assets\Scenes\UIRollingText.cs" />
+    <Compile Include="Assets\zsl\ZMask.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\UIParticleMask\Particle Add.shader" />
+    <None Include="Assets\Shaders\shader\FX\AlphaBlendNoFog.shader" />
+    <None Include="Assets\Shaders\shader\FX\fx_shader_01_liu_guang_01_blend.shader" />
+    <None Include="Assets\Shaders\shader\FX\ParticleAddNoFog.shader" />
+    <None Include="Assets\Shaders\shader\FX\ParticleAddNoFog_hsv.shader" />
+    <None Include="Assets\Shaders\shader\FX\fx_shader_01_liu_guang_01_add.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -590,38 +605,60 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.28f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.Timeline.Editor.csproj">
+      <Project>{E5DBB01D-DBC4-22A6-2BA6-1BC41734C142}</Project>
+      <Name>Unity.Timeline.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VSCode.Editor.csproj">
+      <Project>{447FF10C-D62B-2E50-A1E6-3D458CC9534B}</Project>
+      <Name>Unity.VSCode.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
+      <Project>{1610ACB1-0DBB-C405-7DF3-6DDE7AD7169D}</Project>
+      <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Coffee.CFX_Demo_With_UIParticle.csproj">
+      <Project>{56DB9F79-236C-EEFC-3311-4BA06BD05B65}</Project>
+      <Name>Coffee.CFX_Demo_With_UIParticle</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{E6B5BEE2-A181-112A-4BD3-33409EF437E6}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.csproj">
+      <Project>{53C4295E-514A-C781-4D96-0A622C6F5A50}</Project>
+      <Name>Unity.Timeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.CollabProxy.Editor.csproj">
+      <Project>{345E26B1-72F7-B21C-CF37-60099D8BEC91}</Project>
+      <Name>Unity.CollabProxy.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Rider.Editor.csproj">
+      <Project>{5548C448-7B93-10C9-41F0-17351F8B5467}</Project>
+      <Name>Unity.Rider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
+      <Project>{80B50F31-4849-1E84-100A-B120EC1DFE62}</Project>
+      <Name>Unity.VisualStudio.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Coffee.UIParticle.csproj">
+      <Project>{9B983934-D96D-1524-BE54-E8B09F4F791E}</Project>
+      <Name>Coffee.UIParticle</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{5008C8A3-808F-E6A7-1A49-C35064A57266}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="Coffee.UIParticle.Demo.csproj">
+      <Project>{ECE8141A-DBDB-F0DF-ECF6-3FDBDF7E14C7}</Project>
+      <Name>Coffee.UIParticle.Demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{89AA8118-527A-B947-73E9-3F69C91C6574}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
